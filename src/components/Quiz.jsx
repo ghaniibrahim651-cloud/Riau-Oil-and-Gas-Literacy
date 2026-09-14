@@ -80,8 +80,8 @@ const Quiz = ({ setPage }) => {
     <div className="container animate-fade-in flex justify-center">
       <div className="glass-card" style={{ maxWidth: '700px', width: '100%' }}>
         <div className="mb-4 flex justify-between items-center" style={{ color: 'var(--color-text-muted)' }}>
-          <span>Soal {currentQuestionIndex + 1} / {quizData.length}</span>
-          <span>Skor: {score}</span>
+          <span style={{ fontWeight: 600 }}>Pertanyaan {currentQuestionIndex + 1} dari {quizData.length}</span>
+          <span style={{ fontWeight: 600, color: 'var(--color-primary)' }}>Skor Benar: {score}</span>
         </div>
         
         <div className="progress-bar">
